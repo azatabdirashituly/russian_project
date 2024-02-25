@@ -3,6 +3,18 @@ body {
     margin: 0;
     padding: 0;
 }
+p {
+    color: #333333; /* Dark grey text */
+    padding: 10px;
+    font-size: 40px;
+    background-color: #f2f2f2; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the paragraph */
+    width: auto; /* Adjust width as per content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+}
 
 .container {
     display: flex;
