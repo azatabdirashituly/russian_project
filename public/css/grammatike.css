@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url(../images/gramma-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: calc(100vh - 58px);
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}
+.container h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(42, 105, 214);
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.container p {
+    text-align: left;
+    width: 70%;
+    position: absolute;
+    margin: 0;
+    top: 30%;
+    font-size: 40px;
+    left: 0;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+button {
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(188, 127, 245);
+    transition: 0.3s ease;
+}
+button:hover {
+    background-color: yellow;
+}

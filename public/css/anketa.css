@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.self-assessment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.self-assessment-table, .self-assessment-table th, .self-assessment-table td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+.self-assessment-table th {
+    background-color: rgb(55, 255, 0); /* Light grey background */
+    padding: 10px;
+}
+
+.self-assessment-table td {
+    padding: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space out the radio buttons */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+p {
+    color: #333333; /* Dark grey text */
+    font-size: 16px;
+    padding: 10px;
+}
