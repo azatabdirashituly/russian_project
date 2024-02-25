@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/anketa.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Главная меню</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/getCulturalPage">Культурные интересы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/getCareerPage">Карьерный рост</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/getPersonalPage" style="font-weight: bold;">Личные отношения</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <p><%= msg %></p>
+    <div class="container">
+        <main class="content">
+            <form action="/getRespFromPersonal" method="post">
+                <table class="self-assessment-table">
+                    <tr>
+                        <th></th>
+                        <th>Чрезвычайно важно</th>
+                        <th>Очень важно</th>
+                        <th>Умеренно важно</th>
+                        <th>Незначительно важно</th>
+                        <th>Совсем не важно</th>
+                    </tr>
+                    <tr>
+                        <td>Есть ли у вас русскоговорящие члены семьи, с которыми вы хотели бы общаться более эффективно?</td>
+                        <td><input type="radio" name="q1" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q1" value="Очень важно"></td>
+                        <td><input type="radio" name="q1" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q1" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q1" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Является ли общение с русскоязычным сообществом в вашем регионе причиной для изучения языка?</td>
+                        <td><input type="radio" name="q2" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q2" value="Очень важно"></td>
+                        <td><input type="radio" name="q2" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q2" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q2" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Планируете ли вы путешествовать по русскоязычным регионам и хотите пообщаться с местными жителями?</td>
+                        <td><input type="radio" name="q3" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q3" value="Очень важно"></td>
+                        <td><input type="radio" name="q3" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q3" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q3" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Важно ли для вас изучать русский язык, чтобы понимать и ценить культурное наследие друга или партнера?</td>
+                        <td><input type="radio" name="q4" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q4" value="Очень важно"></td>
+                        <td><input type="radio" name="q4" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q4" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q4" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Интересуетесь ли вы русским языком, чтобы завести новых друзей или связи в русскоязычных онлайн-сообществах?</td>
+                        <td><input type="radio" name="q5" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q5" value="Очень важно"></td>
+                        <td><input type="radio" name="q5" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q5" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q5" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Рассматриваете ли вы изучение русского языка как способ приобщиться к своему наследию или семейной истории?</td>
+                        <td><input type="radio" name="q6" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q6" value="Очень важно"></td>
+                        <td><input type="radio" name="q6" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q6" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q6" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Насколько важно для вас изучать русский язык для эффективного межкультурного общения?</td>
+                        <td><input type="radio" name="q7" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q7" value="Очень важно"></td>
+                        <td><input type="radio" name="q7" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q7" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q7" value="Совсем не важно"></td>
+                    </tr>
+                    <tr>
+                        <td>Мотивированы ли вы изучать русский язык для участия в программах культурного обмена?</td>
+                        <td><input type="radio" name="q8" value="Чрезвычайно важно"></td>
+                        <td><input type="radio" name="q8" value="Очень важно"></td>
+                        <td><input type="radio" name="q8" value="Умеренно важно"></td>
+                        <td><input type="radio" name="q8" value="Незначительно важно"></td>
+                        <td><input type="radio" name="q8" value="Совсем не важно"></td>
+                    </tr>
+                </table>
+                <button type="submit">Получить результат</button>
+            </form>
+        </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

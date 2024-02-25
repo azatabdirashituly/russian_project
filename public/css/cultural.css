@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: url(../images/gramma-bg.jpg);
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20201017/pngtree-question-mark-on-a-pink-pastel-background-3d-illustration-image_422717.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,18 +17,19 @@ body {
     margin: 0;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(42, 105, 214);
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 20%;
     left: 0;
 }
 .container p {
+    color: #fff;
     text-align: left;
     width: 70%;
     position: absolute;
     margin: 0;
     top: 30%;
-    font-size: 40px;
+    font-size: 30px;
     left: 0;
     font-weight: 400;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -43,9 +44,9 @@ button {
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color: rgb(188, 127, 245);
+    background-color: yellow;
     transition: 0.3s ease;
 }
 button:hover {
-    background-color: yellow;
+    background-color: rgb(188, 127, 245);
 }
